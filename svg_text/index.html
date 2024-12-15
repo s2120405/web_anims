@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glasses Poem SVG Art</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .poem-text {
+            font-family: Arial, sans-serif;
+        }
+        text {
+            font-size: 10px;
+            fill: #333;
+            font-family: Arial, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg width="900" height="780" viewBox="0 0 900 780">
+            <!-- Left Lens -->
+            <path id="left-top-curve" d="M250,280 A120,120 0 0,1 400,280" fill="none"/>
+            <path id="left-bottom-curve" d="M250,380 A120,120 0 0,0 400,380" fill="none"/>
+            <path id="left-side" d="M250,280 L250,380" fill="none"/>
+            <path id="left-side-2" d="M400,280 L400,380" fill="none"/>
+
+
+              <!-- Inside Left Lens Text -->
+              <text x="275" y="320" class="poem-text">I've lost my glasses,</text>
+              <text x="275" y="340" class="poem-text">I'm in need,</text>
+              
+              
+              <!-- Bridge -->
+              <path id="bridge" d="M400,330 L500,330" fill="none"/>
+              
+              <!-- Right Lens -->
+              <path id="right-top-curve" d="M500,280 A120,120 0 0,1 650,280" fill="none"/>
+              <path id="right-bottom-curve" d="M500,380 A120,120 0 0,0 650,380" fill="none"/>
+              <path id="right-side" d="M500,280 L500,380" fill="none"/>
+              <path id="right-side-2" d="M650,280 L650,380" fill="none"/>
+              
+              <!-- Inside Right Lens Text -->
+              <text x="525" y="320" class="poem-text">Did I</text>
+              <text x="525" y="340" class="poem-text">leave them</text>
+              <text x="525" y="360" class="poem-text">in my purse?</text>
+            
+            <!-- Temple Arms -->
+            <path id="left-arm" d="M100,330 L250,330" fill="none"/>
+            <path id="right-arm" d="M650,330 L850,330" fill="none"/>
+
+            <!-- Left Temple Text -->
+            <text>
+                <textPath href="#left-arm" startOffset="10">I've hunted near, I've hunted far,</textPath>
+            </text>
+
+            <!-- Left Lens Text -->
+            <text>
+                <textPath href="#left-top-curve" startOffset="10"> I even looked inside my car.</textPath>
+            </text>
+            <text>
+                <textPath href="#left-bottom-curve" startOffset="10">To have them now so I can read.</textPath>
+            </text>
+
+            <!-- Bridge Text -->
+            <text>
+                <textPath href="#bridge" startOffset="0"> Missing by Anne Scott</textPath>
+            </text>
+
+            <!-- Right Lens Text -->
+            <text>
+                <textPath href="#right-top-curve" startOffset="10">I loudly swear and I curse, </textPath>
+            </text>
+            <text>
+                <textPath href="#right-bottom-curve" startOffset="10">Under the sofa, under the bed?</textPath>
+            </text>
+
+            <!-- Right Temple Text -->
+            <text>
+                <textPath href="#right-arm" startOffset="10">Oh there they are—on my head!</textPath>
+            </text>
+        </svg>
+    </div>
+</body>
+</html>
